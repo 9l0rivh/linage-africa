@@ -28,6 +28,95 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    button {
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ text-decoration: none;
+ background: transparent;
+ padding: 0;
+ font-size: inherit;
+ font-family: inherit;
+}
+
+button.learn-more {
+ width: 12rem;
+ height: auto;
+}
+
+button.learn-more .circle {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: relative;
+ display: block;
+ margin: 0;
+ width: 3rem;
+ height: 3rem;
+ background: #1e8bce;
+ border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ margin: auto;
+ background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ left: 0.625rem;
+ width: 1.125rem;
+ height: 0.125rem;
+ background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+ position: absolute;
+ content: "";
+ top: -0.29rem;
+ right: 0.0625rem;
+ width: 0.625rem;
+ height: 0.625rem;
+ border-top: 0.125rem solid #fff;
+ border-right: 0.125rem solid #fff;
+ transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ padding: 0.75rem 0;
+ margin: 0 0 0 1.85rem;
+ color: #282936;
+ font-weight: 700;
+ line-height: 1.6;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+button:hover .circle {
+ width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+ background: #fff;
+ transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+ color: #fff;
+}
+  </style>
 </head>
 
 <body>
@@ -36,21 +125,22 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
       
-      <h1 class="logo"><a href="index.html"><span class="blue">LINAGE</span> <span class="green">AFRICA</span></a></h1>
+      <!--<h1 class="logo"><a href="index.html"><span class="blue">LINAGE</span> <span class="green">AFRICA</span></a></h1>-->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <a href="index.html" class="logo"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Products & Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">HOME</a></li>
+          <li><a class="nav-link scrollto" href="#about">ABOUT</a></li>
+          <li><a class="nav-link scrollto" href="#services">PRODUCTS & SERVICES</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">PORTFOLIO</a></li>
+          <li><a class="nav-link scrollto" href="#team">TEAM</a></li>
+          <li><a class="nav-link scrollto" href="#contact">CONTACT</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
+     
 
     </div>
   </header><!-- End Header -->
@@ -61,15 +151,20 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1>LINEAGE AFRICA</h1>
-          <h2>Express and Secure!</h2>
+          <h1><span class="blue">LINAGE</span> <span class="green">AFRICA</span></h1>
+          <h2>Transportation and Logistical
+            services</h2>
           <div class="d-flex">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="#about" class="scrollto">
+            <button class="learn-more">
+              <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Learn More</span>
+            </button>
+          </a>
                 </div>
           
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img">
-          <img src="assets/img/hero2.png" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
@@ -78,6 +173,43 @@
   <main id="main">
 
     <!-- ======= Featured Services Section ======= -->
+  
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h3>ABOUT LINAGE AFRICA</h3>
+            <p>
+              Linage Africa Limited was established in
+              Tanzania in 2023 with its office domiciled
+              on the 12th Floor,New Bagamoyo road,
+              Mwanga Towers in Dar Es Salaam. <br>
+              The core business for Linage Africa
+              Limited is Transportation and Logistical
+              services for
+              both petroleum products and dry shipments in
+              Tanzania as well as cross border destinations.
+           <br>
+              The directors have vast experience in
+              Transport and Logistical services having
+              worked for some of main Logistical companies
+              including top shipping companies hence being
+              exposed to international engagements.
+             
+            </p>
+          
+          </div>
+          <div class="col-lg-6">
+            <img src="assets/img/about.png" class="img-fluid" alt="" style="width: auto; height: 100%;">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
     <section id="featured-services" class="featured-services">
       <div class="container">
 
@@ -129,40 +261,6 @@
       </div>
     </section><!-- End Featured Services Section -->
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-6">
-            <img src="assets/img/about.png" class="img-fluid" alt="" style="width: auto; height: 400px;">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content">
-            <h3>About Lineage Africa</h3>
-            <p>
-              Linage Africa Limited was established in
-              Tanzania in 2023 with its office domiciled
-              on the 12th Floor,New Bagamoyo road,
-              Mwanga Towers in Dar Es Salaam. <br>
-              The core business for Linage Africa
-              Limited is Transportation and Logistical
-              services for
-              both petroleum products and dry shipments in
-              Tanzania as well as cross border destinations.
-           <br>
-              The directors have vast experience in
-              Transport and Logistical services having
-              worked for some of main Logistical companies
-              including top shipping companies hence being
-              exposed to international engagements.
-             
-            </p>
-          
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
 
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
@@ -203,14 +301,13 @@
         <div class="section-title">
           <span>Products & Services</span>
           <h2>Products & Services</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
         </div>
 
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">TRANSPORTATTION AND <br> LOGISTICS</a></h4>
+              <h4><a href="">TRANSPORTATION AND <br> LOGISTICS</a></h4>
               <p>   We have a modern fleet with various truck types and skilled staff to meet your requirements. Our network of quality trucks, professional drivers and dedicated management team ensures successful regional, national and cross border shipping. With 13 years in transport, we are competent in fleet operation and maintenance, moving all types of commodities. Our commitment to stress-free, damage-free, and on-time service is backed by experienced drivers and fleet management. Our transport management expertise allows us to quickly respond to any disruptions, such as weather, and design a solution that meets your needs.          </p>
             </div>
           </div>
@@ -279,26 +376,17 @@
 
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/folio4.jpg" class="img-fluid" alt="">
-            
-          </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/folio2.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/folio2.jpeg" class="img-fluid" alt="">
           
           </div>
          
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/folio8.jpg" class="img-fluid" alt="">
-           
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/folio5.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/folio5.jpeg" class="img-fluid" alt="">
                      </div>
 
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/folio9.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/folio5.jpg" class="img-fluid" alt="">
            
           </div>
 
@@ -319,6 +407,7 @@
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
+
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -394,19 +483,11 @@
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
       <div class="container">
-
-        <div class="section-title">
-          <span>Team</span>
-          <h2>Team</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/team/team-1.jpg" alt="">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
               <h4>Mr. Ivan Michael shayo</h4>
-              <span>Founder&Managing Director
+              <span><i>Founder & Managing Director</i>
                 </span>
               <p>
                 Petroleum products are naturally in high demand.
@@ -425,43 +506,16 @@ complement on the rates
                 <a href=""><i class="bi bi-instagram"></i></a>
                 <a href=""><i class="bi bi-linkedin"></i></a>
               </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/team/team-2.jpg" alt="">
-              <h4>Sarah Jhinson</h4>
-              <span>Operation Team</span>
-              <p>
-              </p>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/team/team-3.jpg" alt="">
-              <h4>William Anderson</h4>
-              <span>Maintenance Team</span>
-              <p>
-              </p>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img">
+              <img src="assets/img/mrivan.png" class="img-fluid animated" alt="" >
             </div>
+      
           </div>
-
         </div>
 
+       
       </div>
     </section><!-- End Team Section -->
 
@@ -501,32 +555,60 @@ complement on the rates
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form id="contact-form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+                  <input type="text" name="from_name" class="form-control" id="from_name" required>
                 </div>
                 <div class="form-group col-md-6 mt-3 mt-md-0">
                   <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                  <input type="email" class="form-control" name="reply_to" id="reply_to" required>
                 </div>
               </div>
               <div class="form-group mt-3">
                 <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+                <input type="text" class="form-control" name="to_name" id="to_name"  required>
               </div>
               <div class="form-group mt-3">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <textarea class="form-control" name="message"  id="message" rows="1" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+         
+              <button class="button">
+                <span class="button-content">SUBMIT</span>
+            </button>
             </form>
+
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <script type="text/javascript">
+                (function() {
+                    // https://dashboard.emailjs.com/admin/account
+                    emailjs.init('gH2XK79pPETTsTEvH');
+                })();
+            </script>
+            <script type="text/javascript">
+                window.onload = function() {
+                    document.getElementById('contact-form').addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        // generate a five digit number for the contact_number variable
+                       
+                        // these IDs from the previous steps
+                        emailjs.sendForm('service_c48k9sx', 'contact_form', '#contact-form')
+                        .then(function(response) {
+
+                console.log('SUCCESS!', response.status, response.text);
+                document.getElementById('contact-form').reset();
+                alert("Response Sent!");
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+                      
+                    });
+                }
+            </script>
+          
+
           </div>
 
         </div>
@@ -590,7 +672,6 @@ complement on the rates
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
